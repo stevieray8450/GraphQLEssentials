@@ -14,7 +14,7 @@ const root = {
             "id": 12345,
             "firstName": "Steve",
             "lastName": "Boniface",
-            "email": "stevieray8450@gmail.com",
+            "emails": [{ email: "stevieray8450@gmail.com" }, { email: "myOtherEmail@email.com" }],
             "language": "English",
             "gender": "Male"
         }
