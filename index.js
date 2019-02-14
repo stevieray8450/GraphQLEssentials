@@ -40,7 +40,7 @@ const root = {
       friendDatabase[id] = input;
       return new Friend(id, input);
   }
-}; // resolver
+}; // resolvers
 
 app.use(
   "/graphql",
