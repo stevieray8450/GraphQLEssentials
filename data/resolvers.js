@@ -40,8 +40,8 @@ export const resolvers = {
                 newFriend.save((err) => {
                     if (err) reject(err)
                     else resolve(newFriend)
-                })
-            })
+                });
+            });
         }
     }
 };

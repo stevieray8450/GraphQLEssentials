@@ -37,17 +37,17 @@ const friendSchema = new mongoose.Schema({
 const Friends = mongoose.model("friends", friendSchema);
 
 // SQL
-const sequelize = new Sequelize('database', null, null, {
+const sqlize = new Sequelize('database', null, null, {
     dialect: 'sqlite',
     storage: './aliens.sqlite'
-})
+});
 
 // defining schema for aliens entity
-const Aliens = sequelize(define('aliens', {
+const Aliens = sqlize.define('aliens', {
     firstName: { type: Sequelize.STRING },
     lastName: { type: Sequelize.STRING },
     planet: { type: Sequelize.STRING }
-}));
+});
 
 // forcing the creation of new data when the server starts
 Aliens.sync({ force: true }).then(() => {
