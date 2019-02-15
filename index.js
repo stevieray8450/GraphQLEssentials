@@ -1,7 +1,7 @@
 import express from "express";
 import graphqlHTTP from "express-graphql";
 // if using `export default`, this will be import schema from "./schema"; instead
-import { schema } from "./schema";
+import { schema } from "./data/schema";
 
 const app = express();
 
